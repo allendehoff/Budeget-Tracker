@@ -1,5 +1,6 @@
 let transactions = [];
 let myChart;
+// const db = require("./db.js")
 
 fetch("/api/transaction")
   .then(response => {
@@ -77,6 +78,8 @@ function populateChart() {
     }
   });
 }
+
+
 
 function sendTransaction(isAdding) {
   let nameEl = document.querySelector("#t-name");
